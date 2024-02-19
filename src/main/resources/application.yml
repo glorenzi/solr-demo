@@ -4,3 +4,4 @@ spring:
       host: https://root:aP4zzw0rd@solr.company.com/solr
       repositories:
         enabled: true
+        
