@@ -1,6 +1,6 @@
 spring:
   data:
     solr:
-      host: http://localhost:8983/solr
+      host: https://root:aP4zzw0rd@solr.company.com/solr
       repositories:
         enabled: true
