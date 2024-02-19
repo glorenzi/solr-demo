@@ -1,0 +1,27 @@
+asyncapi: '2.0.0'
+info:
+  title: 'Tours Events API'
+  version: '1.0.0'
+channels:
+  tours-events:
+    publish:
+      message:
+        headers:
+          type: object
+          properties:
+            id:
+              type: string
+            operation:
+              type: string
+              enum: ['UPSERT', 'DELETE']
+        payload:
+          type: object
+          properties:
+            ToursEvent:
+              type: object
+              properties:
+                UpsertTours:
+                  type: object
+                  properties:
+                    numberOfTours:
+                      type: integer
